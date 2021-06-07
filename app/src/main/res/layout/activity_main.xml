@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/inputNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textStyle="bold|italic"
+        android:hint="Entrez votre prenom"
+        android:gravity="center_vertical|center" />
+
+    <TextView
+        android:id="@+id/tv_mdp"
+        android:text="mot de passe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:hint="Entrer le mot de passe" />
+    <EditText
+        android:id="@+id/input_mdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textStyle="bold|italic"
+        android:hint="*****"
+        android:gravity="center_vertical|center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:text="Voir data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_voir_data"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:text="ajouter user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ajouter_data"
+            android:textStyle="bold|italic"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
