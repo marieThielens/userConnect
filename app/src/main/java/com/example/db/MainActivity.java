@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.db.db.dao.PersonneDao;
+import com.example.db.fragments.PersonneListeFragment;
 import com.example.db.models.Personne;
 
 import java.util.List;
@@ -31,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
        // ma methode du dao pour que la db soit accessible en écriture
         personneDao.ecrireDb();
-        //long id = personneDao.insererPersonne(p1);
 
         // Lecture de toutes les personne de la db
         personneDao.toutPrendre();
@@ -42,7 +42,13 @@ public class MainActivity extends AppCompatActivity {
             ajouterUser();
         });
 
+        btnVoirData.setOnClickListener(v -> {
+
+        });
+
     }
+
+    // bd.................................
     public void ajouterUser(){
         String monNom = nom.getText().toString();
         String monMdp = mdp.getText().toString();
@@ -57,5 +63,9 @@ public class MainActivity extends AppCompatActivity {
         personneDao.close();
 
     }
+
+    // fragment ..................
+
+    // PersonneListeFragment listFragment = PersonneListeFragment.newInstance(personne);
 
 }
