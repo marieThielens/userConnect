@@ -18,12 +18,12 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     // Création de la db
     public void onCreate(SQLiteDatabase db) { //SQLiteOpenHelper classe qui prend en charge l'interaction avec le db
-       db.execSQL(DbInfo.TableauPersonne.REQUEST_CREATE); // ma requete pour créer une table dans DbInfo
+       db.execSQL(DbInfo.Personne.REQUEST_CREATE); // ma requete pour créer une table dans DbInfo
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(DbInfo.TableauPersonne.REQUEST_DELETE); // on delete
+        db.execSQL(DbInfo.Personne.REQUEST_DELETE); // on delete
         onCreate(db); // on recrée
     }
 
